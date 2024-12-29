@@ -1,0 +1,75 @@
+/* CardGrid.css */
+
+/* Grid Layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 30px;
+  padding: 40px;
+  margin: 20px;
+  background: linear-gradient(135deg, #f3ec78, #af4261); /* Gradient background */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Article Card */
+.article-card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  transform-origin: bottom; /* Setting transform origin for animation */
+}
+
+/* Add a slight rotation on hover */
+.article-card:hover {
+  transform: rotate(-2deg) scale(1.1); /* Slight rotation and scale for a fun effect */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Title Styling */
+.article-card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 10px 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Add bounce effect on hover */
+.article-card:hover {
+  animation: bounce 0.6s;
+}
+
+/* Pulsating animation effect on card */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px 10px rgba(255, 105, 180, 0.5); /* Hot pink pulse */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
+  }
+}
+
+/* Pulsating animation on card hover */
+.article-card:hover {
+  animation: pulse 1s infinite;
+}

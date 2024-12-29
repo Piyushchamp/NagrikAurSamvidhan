@@ -1,0 +1,85 @@
+/* General Styles for the Playing Page */
+.playing-container {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .playing-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: black; /* Set the title text color to black */
+  }
+  
+  .playing-description {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: black; /* Set the description text color to black */
+  }
+  
+  .game-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .game-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 250px;
+    height: 300px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.9;
+  }
+  
+  .game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+  }
+  
+  .game-card-content {
+    text-align: center;
+  }
+  
+  .game-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  
+  .game-card p {
+    font-size: 1rem;
+    max-width: 200px;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .game-card:active {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background when clicked */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .game-options {
+      flex-direction: column;
+    }
+  }
+  

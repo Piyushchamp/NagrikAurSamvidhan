@@ -1,0 +1,66 @@
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4.7rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .about-content {
+    max-width: 50%;
+  }
+  
+  .about-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius:  25px solid black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: black;
+  }
+
+  .about-btn:hover{
+    color:white;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .section-content{
+    font-size: 1.1rem;
+    color: black;
+    line-height: 1.6;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .join-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+  }
+  
+  .contact-btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+  }
+  

@@ -1,0 +1,147 @@
+/* .landing-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/images/background1.webp");
+    color: black;
+    text-align: center;
+    position: relative;
+  }
+  
+  .lion-button {
+    background: #F78419; 
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .lion-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .info-text {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 600px;
+  }
+  
+  .info-subtext {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    max-width: 600px;
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-align: center;
+    width: 100%;
+  } */
+
+
+  .landing-page {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/images/background1.webp");
+    color: black;
+    text-align: center;
+    position: relative;
+    padding: 0 20px; /* Add padding to ensure content is not too close to edges */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    height: 60%; /* Reduced height for the background image */
+  }
+  
+  .content-container {
+    position: absolute;
+    right: 20px; /* Place the container on the right side */
+    top: 50%; /* Vertically center the container */
+    transform: translateY(-50%); /* Vertically center the content */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-radius: 10px;
+    margin-top: 150px;
+    padding: 20px;
+    max-width: 400px;
+    color: black;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 500px;
+    
+    /* Flexbox to center the item-centre */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+  }
+  
+  .item-centre {
+    /* No extra styling needed here, content will be centered */
+  }
+  
+  .lion-button {
+    background: #F78419;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .lion-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .info-text {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .info-subtext {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-align: center;
+    width: 100%;
+  }
+  

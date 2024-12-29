@@ -1,0 +1,45 @@
+.person-left {
+    position: fixed;
+    bottom: 20px; /* Positioning from the bottom */
+    left: 20px;   /* Positioned from the left */
+    z-index: 1000; /* Ensures it's on top of other content */
+    animation: slide-in-left 1s forwards; /* Animation for sliding in from the left */
+    width: 80%;
+  }
+  
+  .police-image {
+    width: 150px; /* Increased size */
+    height: auto;
+  }
+  
+  .person-message {
+    background-color: #1F2937;
+    color: rgb(224, 223, 223);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -45px; /* Adjusted to be above the image */
+    opacity: 0;
+    left: 0;
+    animation: fade-in-message 1s 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slide-in-left {
+    from {
+      left: -150px; /* Starts off-screen on the left */
+    }
+    to {
+      left: 20px; /* Ends in position on the left */
+    }
+  }
+  
+  @keyframes fade-in-message {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

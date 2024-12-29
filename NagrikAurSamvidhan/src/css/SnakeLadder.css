@@ -1,0 +1,85 @@
+/* General layout styles */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 700px;
+  }
+  
+  .game-layout {
+    display: flex;
+    /* margin-top: 1rem; */
+    gap: 20rem; /* Space between board and question section */
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 3rem);
+    grid-template-rows: repeat(10, 3rem);
+    grid-gap: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .square {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    font-weight: bold;
+  }
+  
+  .active {
+    background-color: #f0e68c; /* Highlight the current position */
+  }
+  
+  .snake-number {
+    background-color: #f08080; /* Light red for snake numbers */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .ladder-number {
+    background-color: #98fb98; /* Light green for ladder numbers */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .question-section {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .question-box {
+    margin-top: 20px;
+  }
+  
+  .roll-button,
+  .submit-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .roll-button:hover,
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .result-box {
+    margin-top: 10px;
+  }
+  
